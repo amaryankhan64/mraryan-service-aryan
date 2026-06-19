@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
 }
- 
+
 :root {
     --navy: #0B1628;
     --navy2: #0F1E38;
@@ -22,20 +22,20 @@
     --gray: #A8B5C8;
     --text: #E8EDF4;
 }
- 
+
 body {
     background: var(--navy);
     color: var(--text);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
 }
- 
+
 .site {
     background: var(--navy);
     max-width: 700px;
     margin: 0 auto;
 }
- 
+
 /* ===== NAVBAR ===== */
 .nav {
     background: var(--navy2);
@@ -48,17 +48,17 @@ body {
     top: 0;
     z-index: 100;
 }
- 
+
 .nav-logo {
     font-size: 17px;
     font-weight: 600;
     color: var(--gold);
 }
- 
+
 .nav-logo span {
     color: var(--white);
 }
- 
+
 .nav-btn {
     background: var(--gold);
     color: var(--navy);
@@ -70,11 +70,11 @@ body {
     cursor: pointer;
     transition: background 0.2s;
 }
- 
+
 .nav-btn:hover {
     background: var(--gold2);
 }
- 
+
 /* ===== HERO SECTION ===== */
 .hero {
     background: linear-gradient(160deg, #0B1628 0%, #162847 100%);
@@ -82,7 +82,7 @@ body {
     text-align: center;
     border-bottom: 1px solid rgba(232, 164, 48, 0.15);
 }
- 
+
 .hero-badge {
     display: inline-block;
     background: rgba(232, 164, 48, 0.12);
@@ -94,7 +94,7 @@ body {
     margin-bottom: 16px;
     letter-spacing: 0.5px;
 }
- 
+
 .hero-img {
     width: 88px;
     height: 88px;
@@ -109,25 +109,25 @@ body {
     font-weight: 700;
     color: var(--gold);
 }
- 
+
 .hero h1 {
     font-size: 26px;
     font-weight: 700;
     color: var(--white);
     margin-bottom: 6px;
 }
- 
+
 .hero h1 span {
     color: var(--gold);
 }
- 
+
 .hero-tag {
     font-size: 14px;
     color: var(--gray);
     margin-bottom: 24px;
     line-height: 1.5;
 }
- 
+
 .hero-cta {
     display: inline-block;
     background: var(--gold);
@@ -142,18 +142,18 @@ body {
     transition: background 0.2s;
     text-decoration: none;
 }
- 
+
 .hero-cta:hover {
     background: var(--gold2);
 }
- 
+
 .hero-cta2 {
     display: block;
     font-size: 12px;
     color: var(--gray);
     margin-top: 8px;
 }
- 
+
 /* ===== STATS ===== */
 .stats {
     background: var(--navy2);
@@ -163,56 +163,56 @@ body {
     gap: 8px;
     border-bottom: 1px solid rgba(232, 164, 48, 0.1);
 }
- 
+
 .stat {
     text-align: center;
 }
- 
+
 .stat-num {
     font-size: 20px;
     font-weight: 700;
     color: var(--gold);
 }
- 
+
 .stat-label {
     font-size: 10px;
     color: var(--gray);
     margin-top: 2px;
     line-height: 1.3;
 }
- 
+
 /* ===== SECTION STYLING ===== */
 .section {
     padding: 32px 24px;
 }
- 
+
 .section-title {
     font-size: 18px;
     font-weight: 600;
     color: var(--white);
     margin-bottom: 4px;
 }
- 
+
 .section-sub {
     font-size: 13px;
     color: var(--gray);
     margin-bottom: 20px;
 }
- 
+
 .gold-line {
     width: 36px;
     height: 2px;
     background: var(--gold);
     margin: 8px 0 20px;
 }
- 
+
 /* ===== SERVICES GRID ===== */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
- 
+
 .svc-card {
     background: var(--navy2);
     border: 1px solid rgba(232, 164, 48, 0.15);
@@ -222,36 +222,36 @@ body {
     cursor: pointer;
     transition: all 0.2s;
 }
- 
+
 .svc-card:hover {
     border-color: var(--gold);
     background: var(--navy3);
 }
- 
+
 .svc-icon {
     font-size: 22px;
     margin-bottom: 8px;
     display: block;
 }
- 
+
 .svc-name {
     font-size: 12px;
     font-weight: 500;
     color: var(--white);
     line-height: 1.4;
 }
- 
+
 /* ===== INTERNATIONAL SECTION ===== */
 .intl {
     background: var(--navy2);
 }
- 
+
 .intl-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
- 
+
 .intl-card {
     background: var(--navy3);
     border: 1px solid rgba(232, 164, 48, 0.12);
@@ -263,41 +263,41 @@ body {
     cursor: pointer;
     transition: border-color 0.2s;
 }
- 
+
 .intl-card:hover {
     border-color: var(--gold);
 }
- 
+
 .flag {
     font-size: 22px;
     min-width: 30px;
 }
- 
+
 .intl-info p {
     font-size: 13px;
     font-weight: 500;
     color: var(--white);
     margin-bottom: 2px;
 }
- 
+
 .intl-info span {
     font-size: 11px;
     color: var(--gray);
 }
- 
+
 /* ===== HOW IT WORKS ===== */
 .steps {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
- 
+
 .step {
     display: flex;
     gap: 14px;
     align-items: flex-start;
 }
- 
+
 .step-num {
     min-width: 32px;
     height: 32px;
@@ -312,26 +312,26 @@ body {
     color: var(--gold);
     flex-shrink: 0;
 }
- 
+
 .step-text p {
     font-size: 14px;
     font-weight: 500;
     color: var(--white);
     margin-bottom: 2px;
 }
- 
+
 .step-text span {
     font-size: 12px;
     color: var(--gray);
 }
- 
+
 /* ===== PRICING ===== */
 .price-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
- 
+
 .price-card {
     background: var(--navy2);
     border: 1px solid rgba(232, 164, 48, 0.15);
@@ -340,17 +340,17 @@ body {
     text-align: center;
     transition: all 0.2s;
 }
- 
+
 .price-card:hover {
     border-color: var(--gold);
 }
- 
+
 .price-card.featured {
     border-color: var(--gold);
     background: var(--navy3);
     border-width: 2px;
 }
- 
+
 .price-badge {
     font-size: 10px;
     background: var(--gold);
@@ -361,34 +361,34 @@ body {
     margin-bottom: 8px;
     display: inline-block;
 }
- 
+
 .price-name {
     font-size: 13px;
     font-weight: 500;
     color: var(--white);
     margin-bottom: 8px;
 }
- 
+
 .price-amt {
     font-size: 22px;
     font-weight: 700;
     color: var(--gold);
 }
- 
+
 .price-amt span {
     font-size: 11px;
     color: var(--gray);
     font-weight: 400;
     display: block;
 }
- 
+
 .price-desc {
     font-size: 11px;
     color: var(--gray);
     margin-top: 6px;
     line-height: 1.5;
 }
- 
+
 /* ===== NEW PRICING DESIGN ===== */
 .new-price-grid {
     display: grid;
@@ -396,7 +396,7 @@ body {
     gap: 16px;
     margin-bottom: 32px;
 }
- 
+
 .new-price-card {
     background: var(--navy2);
     border: 2px solid rgba(232, 164, 48, 0.25);
@@ -406,18 +406,18 @@ body {
     position: relative;
     transition: all 0.3s;
 }
- 
+
 .new-price-card:hover {
     border-color: var(--gold);
     transform: translateY(-4px);
 }
- 
+
 .new-price-card.featured-card {
     border-color: var(--gold);
     border-width: 3px;
     background: var(--navy3);
 }
- 
+
 .popular-badge {
     position: absolute;
     top: -16px;
@@ -431,14 +431,14 @@ body {
     font-weight: 700;
     white-space: nowrap;
 }
- 
+
 .card-icon {
     font-size: 40px;
     margin-bottom: 12px;
     display: block;
     opacity: 0.8;
 }
- 
+
 /* ANIMATED SVG ICONS */
 .resume-icon {
     width: 60px;
@@ -446,23 +446,23 @@ body {
     margin: 0 auto;
     filter: drop-shadow(0 2px 4px rgba(232, 164, 48, 0.2));
 }
- 
+
 .resume-icon.basic {
     animation: slideUp 0.6s ease-out;
 }
- 
+
 .resume-icon.premium {
     animation: rotate 0.6s ease-out;
 }
- 
+
 .new-price-card:hover .resume-icon.basic {
     animation: bounce 0.6s ease-in-out infinite;
 }
- 
+
 .new-price-card:hover .resume-icon.premium {
     animation: pulse 0.6s ease-in-out infinite;
 }
- 
+
 @keyframes slideUp {
     from {
         transform: translateY(10px);
@@ -473,7 +473,7 @@ body {
         opacity: 0.8;
     }
 }
- 
+
 @keyframes rotate {
     from {
         transform: rotateY(-180deg) scale(0.8);
@@ -484,7 +484,7 @@ body {
         opacity: 0.8;
     }
 }
- 
+
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
@@ -493,7 +493,7 @@ body {
         transform: translateY(-8px);
     }
 }
- 
+
 @keyframes pulse {
     0%, 100% {
         transform: scale(1);
@@ -504,7 +504,7 @@ body {
         opacity: 1;
     }
 }
- 
+
 .card-title {
     font-size: 16px;
     font-weight: 700;
@@ -512,19 +512,19 @@ body {
     margin-bottom: 8px;
     letter-spacing: 1px;
 }
- 
+
 .card-line {
     width: 32px;
     height: 2px;
     background: var(--gold);
     margin: 8px auto 16px;
 }
- 
+
 .card-features {
     list-style: none;
     text-align: left;
 }
- 
+
 .card-features li {
     font-size: 13px;
     color: var(--text);
@@ -533,14 +533,14 @@ body {
     align-items: center;
     gap: 8px;
 }
- 
+
 .checkmark {
     color: var(--gold);
     font-weight: 700;
     font-size: 14px;
     min-width: 16px;
 }
- 
+
 /* BENEFITS GRID */
 .benefits-grid {
     display: grid;
@@ -549,7 +549,7 @@ body {
     padding-top: 20px;
     border-top: 1px solid rgba(232, 164, 48, 0.15);
 }
- 
+
 .benefit-item {
     display: flex;
     flex-direction: column;
@@ -557,7 +557,7 @@ body {
     text-align: center;
     gap: 8px;
 }
- 
+
 .benefit-icon {
     font-size: 28px;
     color: var(--gold);
@@ -569,31 +569,31 @@ body {
     border: 1px solid rgba(232, 164, 48, 0.3);
     border-radius: 50%;
 }
- 
+
 .benefit-title {
     font-size: 12px;
     color: var(--text);
     font-weight: 500;
     line-height: 1.4;
 }
- 
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .new-price-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
- 
+
     .popular-badge {
         top: -12px;
         font-size: 11px;
     }
- 
+
     .benefits-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
     }
- 
+
     .benefit-icon {
         width: 44px;
         height: 44px;
@@ -604,14 +604,14 @@ body {
         grid-template-columns: 1fr;
     }
 }
- 
+
 /* ===== TESTIMONIALS ===== */
 .testi-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
 }
- 
+
 .testi-card {
     background: var(--navy2);
     border: 1px solid rgba(232, 164, 48, 0.2);
@@ -622,19 +622,19 @@ body {
     display: flex;
     flex-direction: column;
 }
- 
+
 .testi-card:hover {
     border-color: var(--gold);
     transform: translateY(-2px);
 }
- 
+
 .testi-stars {
     color: var(--gold);
     font-size: 13px;
     margin-bottom: 8px;
     letter-spacing: 2px;
 }
- 
+
 .testi-text {
     font-size: 13px;
     color: var(--gray);
@@ -642,13 +642,13 @@ body {
     margin-bottom: 12px;
     flex-grow: 1;
 }
- 
+
 .testi-author {
     display: flex;
     align-items: center;
     gap: 12px;
 }
- 
+
 .testi-avatar {
     width: 40px;
     height: 40px;
@@ -665,41 +665,60 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
- 
+
 .testi-name p {
     font-size: 13px;
     font-weight: 600;
     color: var(--white);
     margin: 0 0 2px 0;
 }
- 
+
 .testi-name span {
     font-size: 11px;
     color: var(--gray);
     display: block;
     font-weight: 400;
 }
- 
+
 /* ===== TESTIMONIAL POPUP ===== */
 .testi-popup {
     position: fixed;
-    left: -400px;
+    left: -450px;
     top: 0;
-    width: 350px;
+    width: 420px;
     height: 100vh;
     background: var(--navy2);
-    border-right: 2px solid var(--gold);
-    padding: 40px 24px;
-    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.4);
+    border-right: 3px solid var(--gold);
+    padding: 50px 32px;
+    box-shadow: 8px 0 24px rgba(0, 0, 0, 0.6);
     z-index: 999;
     overflow-y: auto;
-    transition: left 0.3s ease;
+    transition: left 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
- 
+
 .testi-popup.active {
     left: 0;
 }
- 
+
+.testi-popup-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.testi-popup.active ~ .testi-popup-backdrop,
+.testi-popup-backdrop.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 .popup-close {
     position: absolute;
     top: 16px;
@@ -710,83 +729,92 @@ body {
     font-weight: 700;
     transition: all 0.2s;
 }
- 
+
 .popup-close:hover {
     color: var(--gold2);
     transform: scale(1.2);
 }
- 
+
 .popup-content {
     text-align: center;
     margin-top: 20px;
 }
- 
+
 .popup-avatar {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    border: 2px solid var(--gold);
-    margin: 0 auto 16px;
+    border: 3px solid var(--gold);
+    margin: 0 auto 24px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, var(--gold), var(--gold2));
-    font-size: 20px;
+    font-size: 36px;
     font-weight: 700;
     color: var(--navy);
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 16px rgba(232, 164, 48, 0.3);
 }
- 
+
 .popup-name {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 700;
     color: var(--white);
-    margin-bottom: 4px;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
 }
- 
+
 .popup-role {
-    font-size: 12px;
-    color: var(--gray);
-    margin-bottom: 12px;
+    font-size: 14px;
+    color: var(--gold2);
+    margin-bottom: 20px;
+    font-weight: 500;
 }
- 
+
 .popup-stars {
     color: var(--gold);
-    font-size: 16px;
-    letter-spacing: 2px;
-    margin-bottom: 16px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 24px;
 }
- 
+
 .popup-text {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--text);
-    line-height: 1.8;
-    margin-bottom: 16px;
+    line-height: 1.9;
+    margin-bottom: 24px;
     font-style: italic;
+    padding: 16px;
+    background: rgba(232, 164, 48, 0.08);
+    border-left: 3px solid var(--gold);
+    border-radius: 4px;
 }
- 
+
 .popup-tag {
     display: inline-block;
-    background: rgba(232, 164, 48, 0.2);
-    color: var(--gold);
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 11px;
-    font-weight: 600;
+    background: linear-gradient(135deg, var(--gold), var(--gold2));
+    color: var(--navy);
+    padding: 8px 20px;
+    border-radius: 24px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
- 
+
 /* CLICKABLE TESTIMONIAL CARDS */
 .testi-card {
     cursor: pointer;
     transition: all 0.2s;
 }
- 
+
 .testi-card:hover {
     border-color: var(--gold);
     transform: translateX(4px);
 }
- 
+
 /* ===== FOOTER ===== */
 .footer {
     background: var(--navy2);
@@ -794,25 +822,25 @@ body {
     text-align: center;
     border-top: 1px solid rgba(232, 164, 48, 0.15);
 }
- 
+
 .footer-logo {
     font-size: 16px;
     font-weight: 700;
     color: var(--gold);
     margin-bottom: 4px;
 }
- 
+
 .footer-contact {
     font-size: 12px;
     color: var(--gray);
     margin-top: 4px;
 }
- 
+
 .footer-contact a {
     color: var(--gold);
     text-decoration: none;
 }
- 
+
 .footer-links {
     display: flex;
     justify-content: center;
@@ -820,24 +848,24 @@ body {
     margin: 12px 0;
     flex-wrap: wrap;
 }
- 
+
 .footer-links a {
     font-size: 12px;
     color: var(--gray);
     text-decoration: none;
     transition: color 0.2s;
 }
- 
+
 .footer-links a:hover {
     color: var(--gold);
 }
- 
+
 .footer-copy {
     font-size: 11px;
     color: var(--gray);
     margin-top: 8px;
 }
- 
+
 /* ===== FLOATING WHATSAPP BUTTON ===== */
 .wa-float {
     position: fixed;
@@ -858,34 +886,34 @@ body {
     transition: transform 0.2s;
     border: none;
 }
- 
+
 .wa-float:hover {
     transform: scale(1.1);
 }
- 
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 480px) {
     .stats {
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
     }
- 
+
     .price-grid {
         grid-template-columns: 1fr;
     }
- 
+
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
     }
- 
+
     .intl-grid {
         grid-template-columns: 1fr;
     }
- 
+
     .hero h1 {
         font-size: 22px;
     }
- 
+
     .section-title {
         font-size: 16px;
     }
@@ -893,15 +921,15 @@ body {
     </style>
 </head>
 <body>
- 
+
 <div class="site">
- 
+
     <!-- ===== NAVBAR ===== -->
     <nav class="nav">
         <div class="nav-logo">Mr Aryan <span>Service</span></div>
         <a href="https://wa.me/917497836378" class="nav-btn">WhatsApp Karo</a>
     </nav>
- 
+
     <!-- ===== HERO SECTION ===== -->
     <div class="hero">
         <div class="hero-badge">⭐ India's Trusted Resume Writing Service</div>
@@ -911,7 +939,7 @@ body {
         <a href="https://wa.me/917497836378" class="hero-cta">WhatsApp par Order Karo</a>
         <span class="hero-cta2">Free Consultation • Reply within 1 hour</span>
     </div>
- 
+
     <!-- ===== STATS ===== -->
     <div class="stats">
         <div class="stat">
@@ -931,7 +959,7 @@ body {
             <div class="stat-label">Interview Rate</div>
         </div>
     </div>
- 
+
     <!-- ===== RESUME CATEGORIES ===== -->
     <div class="section">
         <div class="section-title">Resume Categories</div>
@@ -963,7 +991,7 @@ body {
             </div>
         </div>
     </div>
- 
+
     <!-- ===== INTERNATIONAL RESUMES ===== -->
     <div class="section intl">
         <div class="section-title">International Resumes</div>
@@ -1000,7 +1028,7 @@ body {
             </div>
         </div>
     </div>
- 
+
     <!-- ===== HOW IT WORKS ===== -->
     <div class="section">
         <div class="section-title">Kaise Kaam Karta Hai?</div>
@@ -1029,7 +1057,7 @@ body {
             </div>
         </div>
     </div>
- 
+
     <!-- ===== PRICING ===== -->
     <div class="section">
         <div class="section-title">Packages & Pricing</div>
@@ -1102,7 +1130,7 @@ body {
                 </ul>
             </div>
         </div>
- 
+
         <!-- BENEFITS SECTION -->
         <div class="benefits-grid">
             <div class="benefit-item">
@@ -1131,7 +1159,7 @@ body {
             </div>
         </div>
     </div>
- 
+
     <!-- ===== TESTIMONIALS ===== -->
     <div class="section">
         <div class="section-title">Client Reviews</div>
@@ -1205,7 +1233,7 @@ body {
             </div>
         </div>
     </div>
- 
+
     <!-- ===== TESTIMONIAL POPUP ===== -->
     <div class="testi-popup" id="testiPopup">
         <div class="popup-close" onclick="closePopup()">✕</div>
@@ -1218,7 +1246,10 @@ body {
             <span class="popup-tag">ATS Resume</span>
         </div>
     </div>
- 
+
+    <!-- ===== POPUP BACKDROP ===== -->
+    <div class="testi-popup-backdrop" id="popupBackdrop" onclick="closePopup()"></div>
+
     <!-- ===== FOOTER ===== -->
     <div class="footer">
         <div class="footer-logo">MrAryanService.in</div>
@@ -1233,12 +1264,12 @@ body {
         </div>
         <div class="footer-copy">© 2025 Mr Aryan Service. All Rights Reserved.</div>
     </div>
- 
+
 </div>
- 
+
 <!-- ===== FLOATING WHATSAPP BUTTON ===== -->
 <button class="wa-float" onclick="window.open('https://wa.me/917497836378', '_blank')">💬</button>
- 
+
 <script>
 // TESTIMONIAL POPUP FUNCTIONALITY
 function openPopup(event) {
@@ -1252,6 +1283,7 @@ function openPopup(event) {
     
     // Update popup content
     const popup = document.getElementById('testiPopup');
+    const backdrop = document.getElementById('popupBackdrop');
     popup.querySelector('.popup-avatar').textContent = avatarText;
     popup.querySelector('.popup-name').textContent = name;
     popup.querySelector('.popup-role').textContent = role;
@@ -1260,22 +1292,25 @@ function openPopup(event) {
     
     // Show popup with animation
     popup.classList.add('active');
+    backdrop.classList.add('active');
     document.body.style.overflow = 'hidden';
 }
- 
+
 function closePopup() {
     const popup = document.getElementById('testiPopup');
+    const backdrop = document.getElementById('popupBackdrop');
     popup.classList.remove('active');
+    backdrop.classList.remove('active');
     document.body.style.overflow = 'auto';
 }
- 
+
 // Close popup on escape key
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
         closePopup();
     }
 });
- 
+
 // Close popup when clicking outside
 document.addEventListener('click', function(event) {
     const popup = document.getElementById('testiPopup');
@@ -1284,6 +1319,6 @@ document.addEventListener('click', function(event) {
     }
 });
 </script>
- 
+
 </body>
 </html>
