@@ -1,1 +1,1289 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Aryan Service - Professional Resume Writing</title>
+    <style>
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+:root {
+    --navy: #0B1628;
+    --navy2: #0F1E38;
+    --navy3: #162847;
+    --gold: #E8A430;
+    --gold2: #F5C06A;
+    --gold3: #FBE0A8;
+    --white: #FFFFFF;
+    --gray: #A8B5C8;
+    --text: #E8EDF4;
+}
+ 
+body {
+    background: var(--navy);
+    color: var(--text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+ 
+.site {
+    background: var(--navy);
+    max-width: 700px;
+    margin: 0 auto;
+}
+ 
+/* ===== NAVBAR ===== */
+.nav {
+    background: var(--navy2);
+    padding: 14px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(232, 164, 48, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+ 
+.nav-logo {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--gold);
+}
+ 
+.nav-logo span {
+    color: var(--white);
+}
+ 
+.nav-btn {
+    background: var(--gold);
+    color: var(--navy);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 7px 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+ 
+.nav-btn:hover {
+    background: var(--gold2);
+}
+ 
+/* ===== HERO SECTION ===== */
+.hero {
+    background: linear-gradient(160deg, #0B1628 0%, #162847 100%);
+    padding: 48px 24px 40px;
+    text-align: center;
+    border-bottom: 1px solid rgba(232, 164, 48, 0.15);
+}
+ 
+.hero-badge {
+    display: inline-block;
+    background: rgba(232, 164, 48, 0.12);
+    border: 1px solid rgba(232, 164, 48, 0.3);
+    color: var(--gold);
+    font-size: 11px;
+    padding: 4px 14px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+    letter-spacing: 0.5px;
+}
+ 
+.hero-img {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    border: 3px solid var(--gold);
+    margin: 0 auto 16px;
+    background: #1E2D45;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--gold);
+}
+ 
+.hero h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 6px;
+}
+ 
+.hero h1 span {
+    color: var(--gold);
+}
+ 
+.hero-tag {
+    font-size: 14px;
+    color: var(--gray);
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+ 
+.hero-cta {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    font-size: 14px;
+    font-weight: 700;
+    padding: 13px 28px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 8px;
+    transition: background 0.2s;
+    text-decoration: none;
+}
+ 
+.hero-cta:hover {
+    background: var(--gold2);
+}
+ 
+.hero-cta2 {
+    display: block;
+    font-size: 12px;
+    color: var(--gray);
+    margin-top: 8px;
+}
+ 
+/* ===== STATS ===== */
+.stats {
+    background: var(--navy2);
+    padding: 20px 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    border-bottom: 1px solid rgba(232, 164, 48, 0.1);
+}
+ 
+.stat {
+    text-align: center;
+}
+ 
+.stat-num {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--gold);
+}
+ 
+.stat-label {
+    font-size: 10px;
+    color: var(--gray);
+    margin-top: 2px;
+    line-height: 1.3;
+}
+ 
+/* ===== SECTION STYLING ===== */
+.section {
+    padding: 32px 24px;
+}
+ 
+.section-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 4px;
+}
+ 
+.section-sub {
+    font-size: 13px;
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+ 
+.gold-line {
+    width: 36px;
+    height: 2px;
+    background: var(--gold);
+    margin: 8px 0 20px;
+}
+ 
+/* ===== SERVICES GRID ===== */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+ 
+.svc-card {
+    background: var(--navy2);
+    border: 1px solid rgba(232, 164, 48, 0.15);
+    border-radius: 10px;
+    padding: 14px 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+ 
+.svc-card:hover {
+    border-color: var(--gold);
+    background: var(--navy3);
+}
+ 
+.svc-icon {
+    font-size: 22px;
+    margin-bottom: 8px;
+    display: block;
+}
+ 
+.svc-name {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--white);
+    line-height: 1.4;
+}
+ 
+/* ===== INTERNATIONAL SECTION ===== */
+.intl {
+    background: var(--navy2);
+}
+ 
+.intl-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+ 
+.intl-card {
+    background: var(--navy3);
+    border: 1px solid rgba(232, 164, 48, 0.12);
+    border-radius: 10px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+ 
+.intl-card:hover {
+    border-color: var(--gold);
+}
+ 
+.flag {
+    font-size: 22px;
+    min-width: 30px;
+}
+ 
+.intl-info p {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 2px;
+}
+ 
+.intl-info span {
+    font-size: 11px;
+    color: var(--gray);
+}
+ 
+/* ===== HOW IT WORKS ===== */
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+ 
+.step {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+}
+ 
+.step-num {
+    min-width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(232, 164, 48, 0.12);
+    border: 1px solid var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--gold);
+    flex-shrink: 0;
+}
+ 
+.step-text p {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 2px;
+}
+ 
+.step-text span {
+    font-size: 12px;
+    color: var(--gray);
+}
+ 
+/* ===== PRICING ===== */
+.price-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+ 
+.price-card {
+    background: var(--navy2);
+    border: 1px solid rgba(232, 164, 48, 0.15);
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    transition: all 0.2s;
+}
+ 
+.price-card:hover {
+    border-color: var(--gold);
+}
+ 
+.price-card.featured {
+    border-color: var(--gold);
+    background: var(--navy3);
+    border-width: 2px;
+}
+ 
+.price-badge {
+    font-size: 10px;
+    background: var(--gold);
+    color: var(--navy);
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+ 
+.price-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 8px;
+}
+ 
+.price-amt {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--gold);
+}
+ 
+.price-amt span {
+    font-size: 11px;
+    color: var(--gray);
+    font-weight: 400;
+    display: block;
+}
+ 
+.price-desc {
+    font-size: 11px;
+    color: var(--gray);
+    margin-top: 6px;
+    line-height: 1.5;
+}
+ 
+/* ===== NEW PRICING DESIGN ===== */
+.new-price-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+}
+ 
+.new-price-card {
+    background: var(--navy2);
+    border: 2px solid rgba(232, 164, 48, 0.25);
+    border-radius: 16px;
+    padding: 28px 20px;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s;
+}
+ 
+.new-price-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-4px);
+}
+ 
+.new-price-card.featured-card {
+    border-color: var(--gold);
+    border-width: 3px;
+    background: var(--navy3);
+}
+ 
+.popular-badge {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gold);
+    color: var(--navy);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+ 
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 12px;
+    display: block;
+    opacity: 0.8;
+}
+ 
+/* ANIMATED SVG ICONS */
+.resume-icon {
+    width: 60px;
+    height: 75px;
+    margin: 0 auto;
+    filter: drop-shadow(0 2px 4px rgba(232, 164, 48, 0.2));
+}
+ 
+.resume-icon.basic {
+    animation: slideUp 0.6s ease-out;
+}
+ 
+.resume-icon.premium {
+    animation: rotate 0.6s ease-out;
+}
+ 
+.new-price-card:hover .resume-icon.basic {
+    animation: bounce 0.6s ease-in-out infinite;
+}
+ 
+.new-price-card:hover .resume-icon.premium {
+    animation: pulse 0.6s ease-in-out infinite;
+}
+ 
+@keyframes slideUp {
+    from {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 0.8;
+    }
+}
+ 
+@keyframes rotate {
+    from {
+        transform: rotateY(-180deg) scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: rotateY(0) scale(1);
+        opacity: 0.8;
+    }
+}
+ 
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+ 
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1.08);
+        opacity: 1;
+    }
+}
+ 
+.card-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+ 
+.card-line {
+    width: 32px;
+    height: 2px;
+    background: var(--gold);
+    margin: 8px auto 16px;
+}
+ 
+.card-features {
+    list-style: none;
+    text-align: left;
+}
+ 
+.card-features li {
+    font-size: 13px;
+    color: var(--text);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+ 
+.checkmark {
+    color: var(--gold);
+    font-weight: 700;
+    font-size: 14px;
+    min-width: 16px;
+}
+ 
+/* BENEFITS GRID */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(232, 164, 48, 0.15);
+}
+ 
+.benefit-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+}
+ 
+.benefit-icon {
+    font-size: 28px;
+    color: var(--gold);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(232, 164, 48, 0.3);
+    border-radius: 50%;
+}
+ 
+.benefit-title {
+    font-size: 12px;
+    color: var(--text);
+    font-weight: 500;
+    line-height: 1.4;
+}
+ 
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .new-price-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+ 
+    .popular-badge {
+        top: -12px;
+        font-size: 11px;
+    }
+ 
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+ 
+    .benefit-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 24px;
+    }
+    
+    .testi-grid {
+        grid-template-columns: 1fr;
+    }
+}
+ 
+/* ===== TESTIMONIALS ===== */
+.testi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+ 
+.testi-card {
+    background: var(--navy2);
+    border: 1px solid rgba(232, 164, 48, 0.2);
+    border-radius: 12px;
+    padding: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.testi-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-2px);
+}
+ 
+.testi-stars {
+    color: var(--gold);
+    font-size: 13px;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+}
+ 
+.testi-text {
+    font-size: 13px;
+    color: var(--gray);
+    line-height: 1.5;
+    margin-bottom: 12px;
+    flex-grow: 1;
+}
+ 
+.testi-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+ 
+.testi-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--gold);
+    flex-shrink: 0;
+    background: linear-gradient(135deg, var(--gold), var(--gold2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--navy);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+ 
+.testi-name p {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--white);
+    margin: 0 0 2px 0;
+}
+ 
+.testi-name span {
+    font-size: 11px;
+    color: var(--gray);
+    display: block;
+    font-weight: 400;
+}
+ 
+/* ===== TESTIMONIAL POPUP ===== */
+.testi-popup {
+    position: fixed;
+    left: -400px;
+    top: 0;
+    width: 350px;
+    height: 100vh;
+    background: var(--navy2);
+    border-right: 2px solid var(--gold);
+    padding: 40px 24px;
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+}
+ 
+.testi-popup.active {
+    left: 0;
+}
+ 
+.popup-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--gold);
+    font-weight: 700;
+    transition: all 0.2s;
+}
+ 
+.popup-close:hover {
+    color: var(--gold2);
+    transform: scale(1.2);
+}
+ 
+.popup-content {
+    text-align: center;
+    margin-top: 20px;
+}
+ 
+.popup-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid var(--gold);
+    margin: 0 auto 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--gold), var(--gold2));
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--navy);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+ 
+.popup-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 4px;
+}
+ 
+.popup-role {
+    font-size: 12px;
+    color: var(--gray);
+    margin-bottom: 12px;
+}
+ 
+.popup-stars {
+    color: var(--gold);
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+ 
+.popup-text {
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.8;
+    margin-bottom: 16px;
+    font-style: italic;
+}
+ 
+.popup-tag {
+    display: inline-block;
+    background: rgba(232, 164, 48, 0.2);
+    color: var(--gold);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+}
+ 
+/* CLICKABLE TESTIMONIAL CARDS */
+.testi-card {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+ 
+.testi-card:hover {
+    border-color: var(--gold);
+    transform: translateX(4px);
+}
+ 
+/* ===== FOOTER ===== */
+.footer {
+    background: var(--navy2);
+    padding: 24px;
+    text-align: center;
+    border-top: 1px solid rgba(232, 164, 48, 0.15);
+}
+ 
+.footer-logo {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--gold);
+    margin-bottom: 4px;
+}
+ 
+.footer-contact {
+    font-size: 12px;
+    color: var(--gray);
+    margin-top: 4px;
+}
+ 
+.footer-contact a {
+    color: var(--gold);
+    text-decoration: none;
+}
+ 
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 12px 0;
+    flex-wrap: wrap;
+}
+ 
+.footer-links a {
+    font-size: 12px;
+    color: var(--gray);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+ 
+.footer-links a:hover {
+    color: var(--gold);
+}
+ 
+.footer-copy {
+    font-size: 11px;
+    color: var(--gray);
+    margin-top: 8px;
+}
+ 
+/* ===== FLOATING WHATSAPP BUTTON ===== */
+.wa-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    cursor: pointer;
+    z-index: 99;
+    transition: transform 0.2s;
+    border: none;
+}
+ 
+.wa-float:hover {
+    transform: scale(1.1);
+}
+ 
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+ 
+    .price-grid {
+        grid-template-columns: 1fr;
+    }
+ 
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ 
+    .intl-grid {
+        grid-template-columns: 1fr;
+    }
+ 
+    .hero h1 {
+        font-size: 22px;
+    }
+ 
+    .section-title {
+        font-size: 16px;
+    }
+}
+    </style>
+</head>
+<body>
+ 
+<div class="site">
+ 
+    <!-- ===== NAVBAR ===== -->
+    <nav class="nav">
+        <div class="nav-logo">Mr Aryan <span>Service</span></div>
+        <a href="https://wa.me/917497836378" class="nav-btn">WhatsApp Karo</a>
+    </nav>
+ 
+    <!-- ===== HERO SECTION ===== -->
+    <div class="hero">
+        <div class="hero-badge">⭐ India's Trusted Resume Writing Service</div>
+        <div class="hero-img">MA</div>
+        <h1>Mr Aryan <span>Service</span></h1>
+        <p class="hero-tag">Resume jo Interview dilaaye — Guaranteed!<br>ATS • HR Approved • International Formats</p>
+        <a href="https://wa.me/917497836378" class="hero-cta">WhatsApp par Order Karo</a>
+        <span class="hero-cta2">Free Consultation • Reply within 1 hour</span>
+    </div>
+ 
+    <!-- ===== STATS ===== -->
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-num">1000+</div>
+            <div class="stat-label">Resumes Banaye</div>
+        </div>
+        <div class="stat">
+            <div class="stat-num">6+</div>
+            <div class="stat-label">Saal Ka Experience</div>
+        </div>
+        <div class="stat">
+            <div class="stat-num">15+</div>
+            <div class="stat-label">Countries</div>
+        </div>
+        <div class="stat">
+            <div class="stat-num">95%</div>
+            <div class="stat-label">Interview Rate</div>
+        </div>
+    </div>
+ 
+    <!-- ===== RESUME CATEGORIES ===== -->
+    <div class="section">
+        <div class="section-title">Resume Categories</div>
+        <div class="gold-line"></div>
+        <div class="services-grid">
+            <div class="svc-card">
+                <span class="svc-icon">🎯</span>
+                <div class="svc-name">ATS Friendly Resume</div>
+            </div>
+            <div class="svc-card">
+                <span class="svc-icon">✅</span>
+                <div class="svc-name">HR Approved Resume</div>
+            </div>
+            <div class="svc-card">
+                <span class="svc-icon">💼</span>
+                <div class="svc-name">Professional Resume</div>
+            </div>
+            <div class="svc-card">
+                <span class="svc-icon">🌍</span>
+                <div class="svc-name">International Resume</div>
+            </div>
+            <div class="svc-card">
+                <span class="svc-icon">🇪🇺</span>
+                <div class="svc-name">Europass CV</div>
+            </div>
+            <div class="svc-card">
+                <span class="svc-icon">✨</span>
+                <div class="svc-name">Custom Resume</div>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- ===== INTERNATIONAL RESUMES ===== -->
+    <div class="section intl">
+        <div class="section-title">International Resumes</div>
+        <div class="section-sub">Aapke sapne ke desh ke liye tailored format</div>
+        <div class="gold-line"></div>
+        <div class="intl-grid">
+            <div class="intl-card">
+                <div class="flag">🇬🇧</div>
+                <div class="intl-info">
+                    <p>Europe / UK</p>
+                    <span>Europass + British CV format</span>
+                </div>
+            </div>
+            <div class="intl-card">
+                <div class="flag">🇨🇦</div>
+                <div class="intl-info">
+                    <p>Canada</p>
+                    <span>Canadian resume format</span>
+                </div>
+            </div>
+            <div class="intl-card">
+                <div class="flag">🇦🇪</div>
+                <div class="intl-info">
+                    <p>Gulf / Dubai</p>
+                    <span>Gulf region standard format</span>
+                </div>
+            </div>
+            <div class="intl-card">
+                <div class="flag">🇮🇳</div>
+                <div class="intl-info">
+                    <p>India</p>
+                    <span>ATS + HR approved format</span>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- ===== HOW IT WORKS ===== -->
+    <div class="section">
+        <div class="section-title">Kaise Kaam Karta Hai?</div>
+        <div class="gold-line"></div>
+        <div class="steps">
+            <div class="step">
+                <div class="step-num">1</div>
+                <div class="step-text">
+                    <p>WhatsApp par Message Karo</p>
+                    <span>+91 74978 36378 — free consultation milegi</span>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div class="step-text">
+                    <p>Apni Details Bhejo</p>
+                    <span>Qualification, experience, aur job target batao</span>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div class="step-text">
+                    <p>Professional Resume Pao</p>
+                    <span>24-48 ghante mein ready — revisions included</span>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- ===== PRICING ===== -->
+    <div class="section">
+        <div class="section-title">Packages & Pricing</div>
+        <div class="section-sub">Transparent pricing — koi hidden charges nahi</div>
+        <div class="gold-line"></div>
+        
+        <!-- NEW PRICING CARDS -->
+        <div class="new-price-grid">
+            <!-- NORMAL RESUME -->
+            <div class="new-price-card">
+                <div class="card-icon">
+                    <svg class="resume-icon basic" viewBox="0 0 64 80" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="8" y="8" width="48" height="64" rx="4" fill="none" stroke="#E8A430" stroke-width="2"/>
+                        <line x1="16" y1="24" x2="48" y2="24" stroke="#E8A430" stroke-width="1.5"/>
+                        <line x1="16" y1="32" x2="48" y2="32" stroke="#E8A430" stroke-width="1.5"/>
+                        <line x1="16" y1="40" x2="48" y2="40" stroke="#E8A430" stroke-width="1.5"/>
+                        <line x1="16" y1="48" x2="40" y2="48" stroke="#E8A430" stroke-width="1.5"/>
+                    </svg>
+                </div>
+                <h3 class="card-title">NORMAL RESUME</h3>
+                <div class="card-line"></div>
+                <ul class="card-features">
+                    <li><span class="checkmark">✓</span> Professional Format</li>
+                </ul>
+            </div>
+            
+            <!-- STANDARD RESUME (FEATURED) -->
+            <div class="new-price-card featured-card">
+                <div class="popular-badge">⭐ MOST POPULAR</div>
+                <div class="card-icon">
+                    <svg class="resume-icon premium" viewBox="0 0 64 80" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="8" y="8" width="48" height="64" rx="4" fill="none" stroke="#E8A430" stroke-width="2"/>
+                        <line x1="16" y1="24" x2="48" y2="24" stroke="#E8A430" stroke-width="1.5"/>
+                        <line x1="16" y1="32" x2="48" y2="32" stroke="#E8A430" stroke-width="1.5"/>
+                        <line x1="16" y1="40" x2="48" y2="40" stroke="#E8A430" stroke-width="1.5"/>
+                        <line x1="16" y1="48" x2="40" y2="48" stroke="#E8A430" stroke-width="1.5"/>
+                        <circle cx="50" cy="15" r="6" fill="#E8A430"/>
+                    </svg>
+                </div>
+                <h3 class="card-title">STANDARD RESUME</h3>
+                <div class="card-line"></div>
+                <ul class="card-features">
+                    <li><span class="checkmark">✓</span> 90 Days Free Update Warranty</li>
+                    <li><span class="checkmark">✓</span> Standard Format</li>
+                    <li><span class="checkmark">✓</span> Full Professional Resume</li>
+                    <li><span class="checkmark">✓</span> ATS-Friendly Resume</li>
+                </ul>
+            </div>
+            
+            <!-- PREMIUM RESUME -->
+            <div class="new-price-card">
+                <div class="card-icon">
+                    <svg class="resume-icon premium" viewBox="0 0 64 80" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="8" y="8" width="48" height="64" rx="4" fill="none" stroke="#E8A430" stroke-width="2"/>
+                        <line x1="16" y1="24" x2="48" y2="24" stroke="#E8A430" stroke-width="1.5"/>
+                        <line x1="16" y1="32" x2="48" y2="32" stroke="#E8A430" stroke-width="1.5"/>
+                        <line x1="16" y1="40" x2="48" y2="40" stroke="#E8A430" stroke-width="1.5"/>
+                        <line x1="16" y1="48" x2="40" y2="48" stroke="#E8A430" stroke-width="1.5"/>
+                        <path d="M 50 12 L 54 18 L 48 18 Z" fill="#E8A430"/>
+                    </svg>
+                </div>
+                <h3 class="card-title">PREMIUM RESUME</h3>
+                <div class="card-line"></div>
+                <ul class="card-features">
+                    <li><span class="checkmark">✓</span> 1.5 Years Free Update Warranty</li>
+                    <li><span class="checkmark">✓</span> Premium Format</li>
+                    <li><span class="checkmark">✓</span> Full Professional Resume</li>
+                    <li><span class="checkmark">✓</span> ATS-Friendly Resume</li>
+                    <li><span class="checkmark">✓</span> Keyword Optimized Resume</li>
+                </ul>
+            </div>
+        </div>
+ 
+        <!-- BENEFITS SECTION -->
+        <div class="benefits-grid">
+            <div class="benefit-item">
+                <div class="benefit-icon">✓</div>
+                <div class="benefit-text">
+                    <div class="benefit-title">100% Satisfaction Guaranteed</div>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">⏱</div>
+                <div class="benefit-text">
+                    <div class="benefit-title">Quick Turnaround Time</div>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">🔒</div>
+                <div class="benefit-text">
+                    <div class="benefit-title">Secure & Confidential Process</div>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">🎧</div>
+                <div class="benefit-text">
+                    <div class="benefit-title">24/7 Customer Support</div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- ===== TESTIMONIALS ===== -->
+    <div class="section">
+        <div class="section-title">Client Reviews</div>
+        <div class="gold-line"></div>
+        <div class="testi-grid">
+            <div class="testi-card" onclick="openPopup(event)">
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-text">"Pehle 6 mahine koi call nahi aaya. Mr Aryan ka resume lagaya — 2 hafte mein 3 interviews mile!"</div>
+                <div class="testi-author">
+                    <div class="testi-avatar">RK</div>
+                    <div class="testi-name">
+                        <p>Rahul Kumar</p>
+                        <span>IT Professional, Bangalore</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-card" onclick="openPopup(event)">
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-text">"Dubai job ke liye Gulf format resume chahiye tha. Perfect bana — ek hafte mein shortlist ho gayi!"</div>
+                <div class="testi-author">
+                    <div class="testi-avatar">PS</div>
+                    <div class="testi-name">
+                        <p>Priya Sharma</p>
+                        <span>Marketing Executive, Dubai</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-card" onclick="openPopup(event)">
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-text">"Fresher thi, experience nahi tha. Phir bhi 3 MNCs ne interview call kiya. Best service!"</div>
+                <div class="testi-author">
+                    <div class="testi-avatar">RV</div>
+                    <div class="testi-name">
+                        <p>Ritu Verma</p>
+                        <span>Fresh Graduate, Delhi</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-card" onclick="openPopup(event)">
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-text">"Pehle bahut mushkil tha job dhundhna. Canada format se 1 mahine mein job mil gayi. Highly recommended!"</div>
+                <div class="testi-author">
+                    <div class="testi-avatar">VS</div>
+                    <div class="testi-name">
+                        <p>Vikas Singh</p>
+                        <span>Sales Manager, Toronto</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-card" onclick="openPopup(event)">
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-text">"LinkedIn profile bhi optimize karwaya. Recruiters khud message karne lage. Badiya service!"</div>
+                <div class="testi-author">
+                    <div class="testi-avatar">SK</div>
+                    <div class="testi-name">
+                        <p>Sneha Kapoor</p>
+                        <span>Graphic Designer, Pune</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-card" onclick="openPopup(event)">
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-text">"HR approved resume banaya tha. Pehli hi application pe interview call aa gaya. Highly recommended!"</div>
+                <div class="testi-author">
+                    <div class="testi-avatar">AK</div>
+                    <div class="testi-name">
+                        <p>Arjun Khanna</p>
+                        <span>Finance Analyst, Bangalore</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- ===== TESTIMONIAL POPUP ===== -->
+    <div class="testi-popup" id="testiPopup">
+        <div class="popup-close" onclick="closePopup()">✕</div>
+        <div class="popup-content">
+            <div class="popup-avatar">RK</div>
+            <h3 class="popup-name">Rahul Kumar</h3>
+            <p class="popup-role">IT Professional — Bangalore</p>
+            <div class="popup-stars">★★★★★</div>
+            <p class="popup-text">"6 mahine koi call nahi aaya. Mr Aryan ka resume lagaya — 2 hafte mein 3 interviews mile!"</p>
+            <span class="popup-tag">ATS Resume</span>
+        </div>
+    </div>
+ 
+    <!-- ===== FOOTER ===== -->
+    <div class="footer">
+        <div class="footer-logo">MrAryanService.in</div>
+        <div class="footer-contact">
+            📞 +91 74978 36378 &nbsp;|&nbsp; 📧 amaryankhan64@gmail.com
+        </div>
+        <div class="footer-links">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">WhatsApp</a>
+            <a href="#">LinkedIn</a>
+        </div>
+        <div class="footer-copy">© 2025 Mr Aryan Service. All Rights Reserved.</div>
+    </div>
+ 
+</div>
+ 
+<!-- ===== FLOATING WHATSAPP BUTTON ===== -->
+<button class="wa-float" onclick="window.open('https://wa.me/917497836378', '_blank')">💬</button>
+ 
+<script>
+// TESTIMONIAL POPUP FUNCTIONALITY
+function openPopup(event) {
+    const card = event.currentTarget;
+    const avatarDiv = card.querySelector('.testi-avatar');
+    const avatarText = avatarDiv.textContent;
+    const name = card.querySelector('.testi-name p').textContent;
+    const role = card.querySelector('.testi-name span').textContent;
+    const stars = card.querySelector('.testi-stars').textContent;
+    const text = card.querySelector('.testi-text').textContent;
+    
+    // Update popup content
+    const popup = document.getElementById('testiPopup');
+    popup.querySelector('.popup-avatar').textContent = avatarText;
+    popup.querySelector('.popup-name').textContent = name;
+    popup.querySelector('.popup-role').textContent = role;
+    popup.querySelector('.popup-stars').textContent = stars;
+    popup.querySelector('.popup-text').textContent = text;
+    
+    // Show popup with animation
+    popup.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+ 
+function closePopup() {
+    const popup = document.getElementById('testiPopup');
+    popup.classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+ 
+// Close popup on escape key
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closePopup();
+    }
+});
+ 
+// Close popup when clicking outside
+document.addEventListener('click', function(event) {
+    const popup = document.getElementById('testiPopup');
+    if (!popup.contains(event.target) && !event.target.classList.contains('testi-card')) {
+        closePopup();
+    }
+});
+</script>
+ 
+</body>
+</html>
