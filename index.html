@@ -5,6 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mr Aryan Service - Resume Writing</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1308628714805989');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1308628714805989&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
 <style>
 * {
   margin: 0;
@@ -983,42 +1002,42 @@ body {
     <h2 class="section-title">Resume Services Available</h2>
     
     <div class="services-grid">
-      <div class="service-card" onclick="openModal('ats')">
+      <div class="service-card" onclick="trackServiceClick('ATS Friendly Resume'); openModal('ats')">
         <div class="service-icon">🎯</div>
         <div class="service-name">ATS Friendly<br>Resume</div>
       </div>
       
-      <div class="service-card" onclick="openModal('linkedin')">
+      <div class="service-card" onclick="trackServiceClick('LinkedIn Profile Optimization'); openModal('linkedin')">
         <div class="service-icon">🔗</div>
         <div class="service-name">LinkedIn Profile<br>Optimization</div>
       </div>
       
-      <div class="service-card" onclick="openModal('hr')">
+      <div class="service-card" onclick="trackServiceClick('HR Approved Resume'); openModal('hr')">
         <div class="service-icon">✅</div>
         <div class="service-name">HR Approved<br>Resume</div>
       </div>
       
-      <div class="service-card" onclick="openModal('professional')">
+      <div class="service-card" onclick="trackServiceClick('Professional Resume'); openModal('professional')">
         <div class="service-icon">💼</div>
         <div class="service-name">Professional<br>Resume</div>
       </div>
       
-      <div class="service-card" onclick="openModal('international')">
+      <div class="service-card" onclick="trackServiceClick('International Resume'); openModal('international')">
         <div class="service-icon">🌍</div>
         <div class="service-name">International<br>Resume</div>
       </div>
       
-      <div class="service-card" onclick="openModal('europass')">
+      <div class="service-card" onclick="trackServiceClick('Europass CV'); openModal('europass')">
         <div class="service-icon">🇪🇺</div>
         <div class="service-name">Europass<br>CV</div>
       </div>
       
-      <div class="service-card" onclick="openModal('custom')">
+      <div class="service-card" onclick="trackServiceClick('Custom Resume'); openModal('custom')">
         <div class="service-icon">⚙️</div>
         <div class="service-name">Custom<br>Resume</div>
       </div>
       
-      <div class="service-card" onclick="openModal('coverletter')">
+      <div class="service-card" onclick="trackServiceClick('Cover Letter Writing'); openModal('coverletter')">
         <div class="service-icon">📄</div>
         <div class="service-name">Cover Letter<br>Writing</div>
       </div>
@@ -1144,6 +1163,22 @@ body {
 </a>
 
 <script>
+// Meta Pixel Tracking Function
+function trackServiceClick(serviceName) {
+  fbq('track', 'ViewContent', {
+    content_name: serviceName,
+    content_category: 'Resume Service',
+    content_type: 'product',
+    value: 1,
+    currency: 'INR'
+  });
+  
+  // Also track a custom event
+  fbq('trackCustom', 'ServiceViewed', {
+    service_name: serviceName
+  });
+}
+
 const servicesData = {
   ats: {
     title: '🎯 ATS Friendly Resume',
@@ -1275,6 +1310,14 @@ const servicesData = {
   }
 };
 
+function trackLeadClick(serviceName) {
+  fbq('track', 'Lead', {
+    content_name: serviceName,
+    content_category: 'Resume Service',
+    phone: '+919306115369'
+  });
+}
+
 function openModal(service) {
   const data = servicesData[service];
   const modal = document.getElementById('modal');
@@ -1341,7 +1384,7 @@ function openModal(service) {
       </div>
     </div>
     
-    <a href="https://wa.me/919306115369?text=${data.whatsapp}" target="_blank" class="modal-whatsapp-btn">
+    <a href="https://wa.me/919306115369?text=${data.whatsapp}" target="_blank" class="modal-whatsapp-btn" onclick="trackLeadClick('${data.title}')">
       <i class="fab fa-whatsapp"></i> WhatsApp Now
     </a>
   `;
