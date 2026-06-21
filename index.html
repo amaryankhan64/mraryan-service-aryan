@@ -19,7 +19,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Bokeh Background Effect */
 .bokeh-bg {
   position: fixed;
   top: 0;
@@ -40,7 +39,6 @@ body {
   min-height: 100vh;
 }
 
-/* ===== HERO SECTION ===== */
 .hero {
   padding: 50px 20px 30px;
   text-align: center;
@@ -186,7 +184,6 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* ===== SERVICES SECTION ===== */
 .services-section {
   padding: 40px 20px;
   background: rgba(0, 0, 0, 0.3);
@@ -212,7 +209,7 @@ body {
 .service-card {
   background: rgba(255, 255, 255, 0.03);
   border: 2px solid rgba(255, 215, 0, 0.25);
-  padding: 25px 20px;
+  padding: 8px 6px;
   border-radius: 12px;
   text-align: center;
   cursor: pointer;
@@ -221,7 +218,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 140px;
+  min-height: 65px;
 }
 
 .service-card:hover {
@@ -232,20 +229,19 @@ body {
 }
 
 .service-icon {
-  font-size: 50px;
-  margin-bottom: 15px;
+  font-size: 20px;
+  margin-bottom: 3px;
   color: #ffd700;
   display: block;
 }
 
 .service-name {
-  font-size: 16px;
+  font-size: 10px;
   font-weight: 600;
   color: #fff;
-  line-height: 1.4;
+  line-height: 1.1;
 }
 
-/* ===== BENEFITS SECTION ===== */
 .benefits-minimal {
   padding: 40px 20px;
   max-width: 1200px;
@@ -295,7 +291,6 @@ body {
   line-height: 1.3;
 }
 
-/* ===== CTA SECTION ===== */
 .cta-section {
   padding: 40px 20px;
   text-align: center;
@@ -316,7 +311,6 @@ body {
   line-height: 1.7;
 }
 
-/* ===== FOOTER ===== */
 .footer {
   padding: 30px 20px;
   background: rgba(0, 0, 0, 0.9);
@@ -372,7 +366,6 @@ body {
   color: #555;
 }
 
-/* ===== FLOATING WHATSAPP BUTTON ===== */
 .float-wa {
   position: fixed;
   bottom: 30px;
@@ -403,11 +396,236 @@ body {
   50% { transform: scale(1.08); }
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 1200px) {
-  .services-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+/* MODAL STYLES */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: auto;
+  padding-bottom: 80px;
+}
+
+.modal.active {
+  display: block;
+}
+
+.modal-content {
+  background: #0a0a0a;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 900px;
+  border-radius: 10px;
+}
+
+.close-modal {
+  color: #ffd700;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.close-modal:hover {
+  color: #ffb347;
+}
+
+.modal h1 {
+  color: #ffd700;
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.modal p {
+  color: #e8e8e8;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.time-badge {
+  display: inline-block;
+  background: #25D366;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.modal-features {
+  margin: 20px 0;
+  padding: 15px;
+  background: rgba(255, 215, 0, 0.05);
+  border: 2px solid rgba(255, 215, 0, 0.2);
+  border-radius: 10px;
+}
+
+.modal-features h2 {
+  color: #ffd700;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.features-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.feature-item {
+  padding: 8px;
+  background: rgba(37, 211, 102, 0.1);
+  border-left: 3px solid #25D366;
+  border-radius: 5px;
+  font-size: 11px;
+}
+
+.feature-item strong {
+  color: #25D366;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.modal-testimonials {
+  margin: 20px 0;
+  padding: 15px;
+  background: rgba(255, 215, 0, 0.05);
+  border: 2px solid rgba(255, 215, 0, 0.2);
+  border-radius: 10px;
+}
+
+.modal-testimonials h2 {
+  color: #ffd700;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.testimonial-card {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  border-left: 3px solid #ffd700;
+}
+
+.testimonial-card p {
+  font-size: 11px;
+  margin-bottom: 6px;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.author-avatar {
+  width: 28px;
+  height: 28px;
+  background: #ffd700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #0a0a0a;
+  font-size: 10px;
+}
+
+.author-info {
+  flex: 1;
+}
+
+.author-name {
+  color: #ffd700;
+  font-weight: 600;
+  font-size: 10px;
+}
+
+.author-title {
+  color: #b0b0b0;
+  font-size: 9px;
+}
+
+.process-section {
+  margin: 20px 0;
+  padding: 15px;
+  background: rgba(255, 215, 0, 0.05);
+  border: 2px solid rgba(255, 215, 0, 0.2);
+  border-radius: 10px;
+}
+
+.process-section h2 {
+  color: #ffd700;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.step {
+  text-align: center;
+}
+
+.step-number {
+  width: 35px;
+  height: 35px;
+  background: linear-gradient(135deg, #25D366 0%, #20B85F 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 auto 6px;
+}
+
+.step h3 {
+  color: #ffd700;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.step p {
+  color: #b0b0b0;
+  font-size: 10px;
+  line-height: 1.2;
+}
+
+.modal-whatsapp-btn {
+  background: linear-gradient(135deg, #25D366 0%, #20B85F 100%);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.6);
+  text-decoration: none;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+.modal-whatsapp-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(37, 211, 102, 1);
 }
 
 @media (max-width: 768px) {
@@ -426,7 +644,10 @@ body {
   .logo-circle {
     width: 120px;
     height: 120px;
-    font-size: 60px;
+  }
+  
+  .features-list, .process-steps {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -450,6 +671,10 @@ body {
     bottom: 20px;
     right: 20px;
   }
+  
+  .modal-content {
+    margin: 10px;
+  }
 }
 </style>
 </head>
@@ -459,7 +684,7 @@ body {
 
 <div class="content">
   
-  <!-- ===== HERO SECTION ===== -->
+  <!-- HERO SECTION -->
   <div class="hero">
     <p class="welcome-text">Welcome to</p>
     <h1>MR ARYAN</h1>
@@ -475,7 +700,7 @@ body {
       <span class="highlight-text">Your trusted partner for career success!</span>
     </p>
     
-    <a href="https://wa.me/917497836378?text=Hi%20Mr%20Aryan%21%20I%20want%20to%20get%20a%20professional%20resume.%20Can%20you%20help%20me%3F" target="_blank" class="whatsapp-btn">
+    <a href="https://wa.me/919306115369?text=Hii%20sir%20Muje%20Full%20Profesinal%20resume%20ban%20na%20ha" target="_blank" class="whatsapp-btn">
       <i class="fab fa-whatsapp"></i> WHATSAPP NOW
     </a>
     
@@ -484,44 +709,49 @@ body {
     </p>
   </div>
 
-  <!-- ===== SERVICES SECTION ===== -->
+  <!-- SERVICES SECTION -->
   <div class="services-section">
     <h2 class="section-title">Resume Services Available</h2>
     
     <div class="services-grid">
-      <div class="service-card">
+      <div class="service-card" onclick="openModal('ats')">
         <div class="service-icon">🎯</div>
         <div class="service-name">ATS Friendly<br>Resume</div>
       </div>
       
-      <div class="service-card">
+      <div class="service-card" onclick="openModal('linkedin')">
+        <div class="service-icon">🔗</div>
+        <div class="service-name">LinkedIn Profile<br>Optimization</div>
+      </div>
+      
+      <div class="service-card" onclick="openModal('hr')">
         <div class="service-icon">✅</div>
         <div class="service-name">HR Approved<br>Resume</div>
       </div>
       
-      <div class="service-card">
+      <div class="service-card" onclick="openModal('professional')">
         <div class="service-icon">💼</div>
         <div class="service-name">Professional<br>Resume</div>
       </div>
       
-      <div class="service-card">
+      <div class="service-card" onclick="openModal('international')">
         <div class="service-icon">🌍</div>
         <div class="service-name">International<br>Resume</div>
       </div>
       
-      <div class="service-card">
+      <div class="service-card" onclick="openModal('europass')">
         <div class="service-icon">🇪🇺</div>
         <div class="service-name">Europass<br>CV</div>
       </div>
       
-      <div class="service-card">
+      <div class="service-card" onclick="openModal('custom')">
         <div class="service-icon">⚙️</div>
         <div class="service-name">Custom<br>Resume</div>
       </div>
     </div>
   </div>
 
-  <!-- ===== BENEFITS SECTION ===== -->
+  <!-- BENEFITS SECTION -->
   <div class="benefits-minimal">
     <h2 class="section-title">Why Choose Mr Aryan Service</h2>
     
@@ -552,32 +782,32 @@ body {
     </div>
   </div>
 
-  <!-- ===== CTA SECTION ===== -->
+  <!-- CTA SECTION -->
   <div class="cta-section">
     <h2 class="cta-title">Ready for Your Dream Job?</h2>
     <p class="cta-description">
       Aapka dream job sirf ek strong resume door hai! 1000+ clients ko hum ne success dilaye hain. Ab aapka turn - professional resume se career badlo aur unlimited opportunities unlock karo. Connect karo aaj hi WhatsApp par! 🚀
     </p>
     
-    <a href="https://wa.me/917497836378?text=I%27m%20ready%20to%20get%20my%20professional%20resume.%20What%27s%20the%20first%20step%3F" target="_blank" class="whatsapp-btn">
+    <a href="https://wa.me/919306115369?text=Hii%20sir%20Muje%20Full%20Profesinal%20resume%20ban%20na%20ha" target="_blank" class="whatsapp-btn">
       <i class="fab fa-whatsapp"></i> WHATSAPP NOW
     </a>
   </div>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- FOOTER -->
   <div class="footer">
     <div class="footer-logo">MrAryanService.in</div>
     
     <div class="contact-info">
-      <p><span class="contact-icon">📞</span> +91 74978 36378</p>
+      <p><span class="contact-icon">📞</span> +91 93061 15369</p>
       <p><span class="contact-icon">📧</span> amaryankhan64@gmail.com</p>
       <p><span class="contact-icon">📍</span> Bus Stop, Ludhiana, Punjab 141008</p>
     </div>
     
     <div class="social-links">
       <a href="https://www.instagram.com" target="_blank">Instagram</a>
-      <a href="https://www.facebook.com" target="_blank">Facebook</a>
-      <a href="https://wa.me/917497836378" target="_blank">WhatsApp</a>
+      <a href="https://www.facebook.com/Mraryanservice.in/" target="_blank">Facebook</a>
+      <a href="https://wa.me/919306115369" target="_blank">WhatsApp</a>
       <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
     </div>
     
@@ -587,10 +817,223 @@ body {
   </div>
 </div>
 
-<!-- ===== FLOATING WHATSAPP BUTTON ===== -->
-<a href="https://wa.me/917497836378?text=Hi%21%20I%27m%20interested%20in%20your%20resume%20services.%20Tell%20me%20more%21" target="_blank" class="float-wa" title="Chat on WhatsApp">
+<!-- MODALS -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal" onclick="closeModal()">&times;</span>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/919306115369?text=Hii%20sir%20Muje%20Full%20Profesinal%20resume%20ban%20na%20ha" target="_blank" class="float-wa" title="Chat on WhatsApp">
   <i class="fab fa-whatsapp"></i>
 </a>
+
+<script>
+const servicesData = {
+  ats: {
+    title: '🎯 ATS Friendly Resume',
+    description: 'Get noticed by recruiters with ATS optimization',
+    time: '24 Hours',
+    features: [
+      'Keyword optimized',
+      'ATS compatible',
+      'Clean format',
+      'Quick delivery'
+    ],
+    testimonials: [
+      { name: 'Rajesh Kumar', title: 'Software Engineer', text: 'Got 5 interviews in first week! Amazing work!' },
+      { name: 'Priya Singh', title: 'Marketing Manager', text: 'Multiple HR calls in 2 days. Worth it!' }
+    ],
+    whatsapp: 'Hi%20sir%2C%20I%20want%20ATS%20Friendly%20Resume'
+  },
+  linkedin: {
+    title: '🔗 LinkedIn Profile Optimization',
+    description: 'Get noticed by recruiters on LinkedIn',
+    time: '12 Hours',
+    features: [
+      'Professional headline',
+      'Keyword rich bio',
+      'Profile polish',
+      'Fast turnaround'
+    ],
+    testimonials: [
+      { name: 'Suresh Kumar', title: 'IT Professional', text: 'Got 20+ connection requests from recruiters! Amazing!' },
+      { name: 'Meera Khan', title: 'HR Manager', text: 'Recruiters started reaching out! Best investment!' }
+    ],
+    whatsapp: 'Hi%20sir%2C%20I%20want%20LinkedIn%20Profile%20Optimization'
+  },
+  hr: {
+    title: '✅ HR Approved Resume',
+    description: 'Resume that gets past HR screening',
+    time: '24 Hours',
+    features: [
+      'HR-friendly format',
+      'Recruiter attention',
+      'Screening proof',
+      'Quick delivery'
+    ],
+    testimonials: [
+      { name: 'Vikram Kumar', title: 'Finance Manager', text: 'HR called me within 3 days! So impressed!' },
+      { name: 'Riya Desai', title: 'Business Analyst', text: 'Got shortlisted at my dream company! Thank you!' }
+    ],
+    whatsapp: 'Hi%20sir%2C%20I%20want%20HR%20Approved%20Resume'
+  },
+  professional: {
+    title: '💼 Professional Resume',
+    description: 'Modern & impactful resume design',
+    time: '24 Hours',
+    features: [
+      'Modern design',
+      'Impactful',
+      'Professional',
+      'Quick delivery'
+    ],
+    testimonials: [
+      { name: 'Ajay Joshi', title: 'Designer', text: 'The design is stunning! Got compliments from interviewers!' },
+      { name: 'Neha Patel', title: 'Project Manager', text: 'Very professional! Made my resume stand out!' }
+    ],
+    whatsapp: 'Hi%20sir%2C%20I%20want%20Professional%20Resume'
+  },
+  international: {
+    title: '🌍 International Resume',
+    description: 'Resume for global job opportunities',
+    time: '36 Hours',
+    features: [
+      'Global standards',
+      'Multi-format',
+      'Globally accepted',
+      'Fast delivery'
+    ],
+    testimonials: [
+      { name: 'Sanjay Agarwal', title: 'Software Engineer', text: 'Got offers from USA and UK! Perfect format!' },
+      { name: 'Madhuri Pant', title: 'Consultant', text: 'International companies loved the format!' }
+    ],
+    whatsapp: 'Hi%20sir%2C%20I%20want%20International%20Resume'
+  },
+  europass: {
+    title: '🇪🇺 Europass CV',
+    description: 'EU-standard CV format globally recognized',
+    time: '24 Hours',
+    features: [
+      'EU standard',
+      'Recognized',
+      'Structured',
+      'Quick delivery'
+    ],
+    testimonials: [
+      { name: 'Rahul Prajapat', title: 'Engineer', text: 'Perfect for Europe! Got job in Germany!' },
+      { name: 'Divya Malhotra', title: 'Architect', text: 'Very professional Europass format!' }
+    ],
+    whatsapp: 'Hi%20sir%2C%20I%20want%20Europass%20CV'
+  },
+  custom: {
+    title: '⚙️ Custom Resume',
+    description: 'Fully customized resume tailored for you',
+    time: '48 Hours',
+    features: [
+      'Fully customized',
+      'Unique design',
+      'Tailor-made',
+      'Complete package'
+    ],
+    testimonials: [
+      { name: 'Vikas Sharma', title: 'Manager', text: 'Completely personalized! Recruiters were impressed!' },
+      { name: 'Laxmi Sharma', title: 'Executive', text: 'Exceeded expectations! Highly personalized!' }
+    ],
+    whatsapp: 'Hi%20sir%2C%20I%20want%20Custom%20Resume'
+  }
+};
+
+function openModal(service) {
+  const data = servicesData[service];
+  const modal = document.getElementById('modal');
+  const body = document.getElementById('modalBody');
+  
+  let html = `
+    <h1>${data.title}</h1>
+    <p>${data.description}</p>
+    <div class="time-badge">⏱️ ${data.time}</div>
+    
+    <div class="modal-features">
+      <h2>✨ What You Get</h2>
+      <div class="features-list">
+  `;
+  
+  data.features.forEach(f => {
+    html += `<div class="feature-item"><strong>✓ ${f}</strong></div>`;
+  });
+  
+  html += `</div></div>`;
+  
+  html += `
+    <div class="modal-testimonials">
+      <h2>⭐ Success Stories</h2>
+  `;
+  
+  data.testimonials.forEach(t => {
+    html += `
+      <div class="testimonial-card">
+        <p>"${t.text}"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">${t.name.charAt(0)}${t.name.split(' ')[1].charAt(0)}</div>
+          <div class="author-info">
+            <div class="author-name">${t.name}</div>
+            <div class="author-title">${t.title}</div>
+          </div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+    `;
+  });
+  
+  html += `</div>`;
+  
+  html += `
+    <div class="process-section">
+      <h2>🎯 How It Works</h2>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Submit</h3>
+          <p>Share your details</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Create</h3>
+          <p>We craft your resume</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Deliver</h3>
+          <p>Get in time</p>
+        </div>
+      </div>
+    </div>
+    
+    <a href="https://wa.me/919306115369?text=${data.whatsapp}" target="_blank" class="modal-whatsapp-btn">
+      <i class="fab fa-whatsapp"></i> WhatsApp Now
+    </a>
+  `;
+  
+  body.innerHTML = html;
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('modal').classList.remove('active');
+  document.body.style.overflow = 'auto';
+}
+
+window.onclick = function(event) {
+  const modal = document.getElementById('modal');
+  if (event.target == modal) {
+    closeModal();
+  }
+}
+</script>
 
 </body>
 </html>
